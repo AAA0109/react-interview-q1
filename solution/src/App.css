@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 16px;
 }
 
 .App-logo {
@@ -35,4 +38,60 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.input-row p {
+  min-width: 60px;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+.input-row input, .input-row select {
+  flex-grow: 1;
+  height: 100%;
+}
+
+p.alert {
+  margin-bottom: 16px;
+  color: red;
+}
+
+.last-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.entry-table {
+  width: 100%;
+  border: 4px solid;
+  border-collapse: collapse;
+}
+
+.entry-table thead tr th {
+  background-color: #ccc;
+}
+
+.entry-table tbody tr:nth-child(2n+1) td {
+  background-color: #eee;
+}
+
+.entry-table tbody tr:nth-child(2n) td {
+  background-color: #fff;
+}
+
+.entry-table tr th:first-child, .entry-table tr td:first-child {
+  border-right: 4px solid;
 }
